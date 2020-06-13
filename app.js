@@ -20,6 +20,27 @@ app.get("/", (incomingRequest, responseToBeSent) => {
   responseToBeSent.send("Hello World !");
 });
 
+app.get("/user", (req, res) => {
+  res.send("Hello User !");
+});
+
+/**
+ * using params to get data from url
+ */
+app.get("/user/:username", (request, response) => {
+  // response.send("Hello " + username + " !");
+  response.json({
+    message: `Hello ${request.params.username}`,
+  });
+});
+
+app.get("/user/:username/:age", (request, response) => {
+  // response.send("Hello " + username + " !");
+  response.send(
+    `Hello ${request.params.username} ! I know that you are ${request.params.age} years old !`
+  );
+});
+
 /**
  * make application listen and respond (basically interact) on port 3000
  */
