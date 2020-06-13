@@ -6,3 +6,5 @@
 - Got to know about node_modules
   - node_modules folder can be generated again using npm install
 - Write hello world of express
+- Got to know a bit about markdown
+- Learnt how to create branches
