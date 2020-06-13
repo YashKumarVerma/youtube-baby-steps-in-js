@@ -1,0 +1,12 @@
+{
+  "name": "youtube-baby-steps-in",
+  "version": "1.0.0",
+  "description": "nothing actually",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
